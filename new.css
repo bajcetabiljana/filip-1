@@ -1,0 +1,44 @@
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 80%;
+    margin: auto;
+}
+.folder {
+    position: relative;
+}
+.folder img {
+    display: block;
+}
+
+.folder:hover .hidden {
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.under {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*width:100%  ako zelimo da taj element bude cele duzine svog roditelja*/
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    padding: 20px;
+}
+.under h3 {
+    margin-top: 0;
+}

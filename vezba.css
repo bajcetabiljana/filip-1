@@ -1,0 +1,69 @@
+.grandma {
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.mother {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.child {
+    width: 100px;
+    height: 20px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+
+.box {
+    border: 1px solid red;
+    width: 100%;
+    margin: 0;
+}
+.content {
+
+      /* animation properties */
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(50%);
+      
+      -moz-animation: my-animation 15s linear infinite;
+      -webkit-animation: my-animation 15s linear infinite;
+      animation: my-animation 15s linear infinite;
+    }
+    
+    /* for Firefox */
+    @-moz-keyframes my-animation {
+      from { -moz-transform: translateX(100%); }
+      to { -moz-transform: translateX(-100%); }
+    }
+    
+    /* for Chrome */
+    @-webkit-keyframes my-animation {
+      from { -webkit-transform: translateX(100%); }
+      to { -webkit-transform: translateX(-100%); }
+    }
+    
+    @keyframes my-animation {
+      from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+      to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+    }

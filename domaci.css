@@ -1,0 +1,26 @@
+.responsive  {
+    width: 100%;
+    height: auto;
+}
+
+.resizeBg {
+    background-color: silver;
+    padding: 30px;
+}
+.fixededImg {
+    display: block;
+}
+.resizeBox {
+    position: relative;
+}
+.resize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    resize: inline;
+    overflow: hidden;
+}
+.resize img {
+    height: 100%;
+}
