@@ -1,69 +1,140 @@
-.grandma {
-    width: 400px;
-    height: 300px;
-    background-color: blue;
-    position: relative;
-    margin-bottom: 100px;
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: #1d1c1e;
+  margin: 0;
 }
 
-.mother {
-    width: 150px;
-    height: 150px;
-    background-color: green;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-    margin: auto;
+.container {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.child {
-    width: 100px;
-    height: 20px;
-    background-color: yellow;
-    border: 2px solid black;
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
+.topHeader {
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #efb5d9;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
-.box {
-    border: 1px solid red;
-    width: 100%;
-    margin: 0;
 }
-.content {
 
-      /* animation properties */
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(50%);
-      
-      -moz-animation: my-animation 15s linear infinite;
-      -webkit-animation: my-animation 15s linear infinite;
-      animation: my-animation 15s linear infinite;
-    }
-    
-    /* for Firefox */
-    @-moz-keyframes my-animation {
-      from { -moz-transform: translateX(100%); }
-      to { -moz-transform: translateX(-100%); }
-    }
-    
-    /* for Chrome */
-    @-webkit-keyframes my-animation {
-      from { -webkit-transform: translateX(100%); }
-      to { -webkit-transform: translateX(-100%); }
-    }
-    
-    @keyframes my-animation {
-      from {
-        -moz-transform: translateX(100%);
-        -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-      }
-      to {
-        -moz-transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-      }
-    }
+.toggleMenu {
+  background-color: silver;
+  width: 350px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding-top: 15px;
+}
+
+.toggleMenu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toggleMenu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown img{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+}
+
+.undermenu a {
+  background-color: gray;
+}
+
+.toggleSoc {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.toggleSoc img {
+  width: 20px;
+  height: 20px;
+}
+
+.toggleSoc img:hover {
+  opacity: 0.2;
+}
+
+.close{
+  color:white;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.close span {
+  cursor: pointer;
+  font-size: 35px;
+}
+
+@media(max-width:991px){
+  #middle, #soc {
+      display: none;
+  }
+
+  #left {
+      margin: auto;
+  }
+
+  #left img {
+      width: 100px;
+      height: 100px;
+  }
+
+  #user>ul>li:First-child{
+      display: none;
+  }
+
+  .leftMob {
+      position: absolute;
+      display: none;
+      align-items: center;
+      gap: 0.75rem;
+  }
+
+  .toggleBar {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+  }
+
+  .toggleBar span {
+      background-color: black;
+      height: 2px;
+      width: 25px;
+      display: block;
+  }
+
+  #right img {
+      width: 25px;
+      height: 25px;
+  }
+
+  .search img {
+      width: 25px;
+      height: 25px;
+  }
+}

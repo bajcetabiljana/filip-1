@@ -137,6 +137,9 @@ li {
 .undermenu a:hover {
     color: gray;
 }
+.toggleMenu {
+    display: none;
+}
 
 
 
@@ -456,6 +459,76 @@ footer {
         margin-left: 20px;
         margin-right: 20px;
     }
+    .toggleMenu {
+        display: block;
+        background-color: silver;
+        width: 350px;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding-top: 15px;
+      }
+      .toggleMenu ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .toggleMenu a {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: block;
+        color: white;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+      }
+      .dropdown {
+        display: block;
+      }
+      .dropdown:hover {
+        background-color: transparent;
+      }
+      .dropdown img{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+      }
+      .undermenu {
+        display: block;
+        width: 100%;
+        background-color: gray;
+      }
+      .toggleSoc {
+        display: flex;
+        gap: 1.25rem;
+      }
+      
+      .toggleSoc img {
+        width: 20px;
+        height: 20px;
+      }
+      
+      .toggleSoc img:hover {
+        opacity: 0.2;
+      }
+      
+      .close{
+        color:white;
+        padding-bottom: 20px;
+        padding-left: 20px;
+      }
+      .close span {
+        cursor: pointer;
+        font-size: 35px;
+      }
+      #right img {
+        width: 25px;
+        height: 25px;
+    }
+      
     
 }
 
